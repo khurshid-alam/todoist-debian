@@ -1,0 +1,28 @@
+Source: python-todoist
+Section: python
+Priority: extra
+Build-Depends: debhelper (>= 9~),
+               dh-python,
+               python-all,
+               python-setuptools,
+               python3-all (>= 2.6.6-3~),
+               python3-setuptools
+X-Python-Version: >= 2.7
+X-Python3-Version: >= 3.4
+Maintainer: Khurshid Alam <khurshid.alam@linuxmail.org>
+Standards-Version: 3.9.3
+Homepage: https://launchpad.net/weather-indicator
+
+Package: python3-todoist
+Architecture: all
+Depends: python3-requests,        
+         ${misc:Depends},
+         ${python3:Depends},
+Description: Python3 wrapper for todoist
+
+Package: python-todoist
+Architecture: all
+Depends: python-requests,        
+         ${misc:Depends},
+         ${python3:Depends},
+Description: Python wrapper for todoist
